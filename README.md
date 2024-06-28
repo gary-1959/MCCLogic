@@ -1,50 +1,43 @@
-SharpCircuit
-=======
+# MCCLogic - The MCC Training Simulator for Electricians
 
-This is a C# port of Paul Falstad's excellent [circuit simulator](http://www.falstad.com/circuit/) applet. 
+<p align="center">
+<img src="https://raw.githubusercontent.com/gary-1959/MCCLogic/main/User%20Manual/Images/SPLASH.png" alt="MCCLogic - The MCC Training Simulator for Rig Electricians" title="MCCLogic - The MCC Training Simulator for Electricians">
+</p>
 
-Most of the circuit elements are untested. Initial testing suggests that the majority of the circuits work exactly as they did in the applet, but until further notice, your mileage may vary.
+MCCLogic is a software simulation package for training rig electricians to troubleshoot MCC Starters.
 
-Licence: MIT/Boost C++
+It is written in C# for a Windows PC.
 
-**DISCLAIMER**
+The complete program and source files, including a downloadable installation and user manual is available on this Github page.
 
-This project is rated 'H' for hobbyist, I am not an electrical engineer! The tests in this project compare the output of the simulation to values extracted from falstad's original applet, they have not been independently verified for mathematical or experimental rigour.
+The simulation is based on a single MCC starter.
 
-## ToDo
+The software is built of two parts: the graphic representation of the system equipment, and a mathematical simulation of the analogue circuits. It leans heavily on a modified version of SharpCircuit (available on GitHub), a C# port of Paul Falstad's excellent circuit simulator applet.
 
-- Test everything!
-- Is there a better way to handle elements resizing their lead array?
-- Is there a simpler way to model node relationships?.
-- Refactor voltage elements
-- Remove empty classes
+The student can probe terminals on the simulation screens and measure the voltage at each point.
 
-Testing priority:
-Voltage waves, SweepElm, Chips
+Faults can be applied to the circuit, which then allows the student to practice identification of faults by understanding the schematics and the observed measurements.
 
-## Licence
+Faults can be introduced manually or from a pre-defined timed sequence of events controlled by a script running in the background. Scripts can be customised and saved and can create complex scenarios which will test the abilities of the most experienced technician.
 
-The original applet source code [[download](http://www.falstad.com/circuit/src.zip)] is licensed under Paul Falstad's [Applet Source Licence](http://www.falstad.com/licensing.html). The new API and other improvements are licensed under the Boost Software License.
+This program assumes that the user understands what an MCC starter is, what it is used for and how it works, and is familiar with the terminology associated with it.
 
-```
-CirSim.java (c) 2010 by Paul Falstad - java@falstad.com
-http://www.falstad.com/circuit/
+## Installation
 
-Falstad.com Applet Source Licence.
-http://www.falstad.com/licensing.html
+The software has complex calculations to perform to simulate the analogue circuitry, so a Windows (version 7 or later) PC with plenty of memory (at least 4GB) and a powerful CPU will improve the user experience. The software will run on 32-bit machines, but these may experience memory problems due to memory fragmentation, so 64-bit is recommended.
 
-You have permission to use these applets in a classroom setting or take screenshots 
-as long as the applets are unmodified. Modification or redistribution for non-commercial 
-purposes is allowed, as long as you credit me (Paul Falstad) and provide a link to my page 
-(the page you found the applet(s) on, or http://www.falstad.com/mathphysics.html). Contact 
-me for any other uses. The source code for each applet is generally available on that applet's 
-web page, but some of the applets use third-party source code that has restrictions.
+A mouse with a scroll wheel is required.
 
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
-WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-```
+To install, download mcclogic.zip and run the setup.exe file.
 
-```
+A mouse with a scroll wheel is required.
+
+## User Manual
+
+There is a PDF User Manual available for download.
+
+## SharpCircuit License
+
 SharpCircuit (c) 2014 Riley 'Mervill' Godard - mervills.email@gmail.com
 https://github.com/Mervill/SharpCircuit
 http://transistorcollective.net/
@@ -72,4 +65,4 @@ SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
 FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
-```
+
