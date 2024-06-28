@@ -1,0 +1,7 @@
+/* MCCLogic Fault Scenario Script
+/* Demo Script 004: Remote contact faults
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the MCC Circuit breaker</li>{{n}}<li>Turn the control switch to remote</li>{{n}}</ul>	tannoy.png
+00:00:10	0023	F	{{empty}}	noimage.png
+00:00:00	0025	F	{{empty}}	noimage.png
+00:00:00	0020	F	<p>The Auxiliary Fan is not working when I press the start.</p>	motorman.png

@@ -1,0 +1,6 @@
+/* MCCLogic Fault Scenario Script
+/* Demo Script 002: Fuse & Transformer Fault
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the MCC Circuit breaker</li>{{n}}<li>Turn the control switch to local</li>{{n}}<li>Press the start button (click again to release)</li>{{n}}</ul>	tannoy.png
+00:00:10	0017	F	{{empty}}	noimage.png
+00:00:00	0018	F	<p>The Auxiliary Fan was running, then just went off-line</p>{{n}}<p>We need that fan running NOW!</p>	roustabout.png

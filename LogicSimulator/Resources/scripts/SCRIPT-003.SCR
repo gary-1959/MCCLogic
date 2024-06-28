@@ -1,0 +1,5 @@
+/* MCCLogic Fault Scenario Script
+/* Demo Script 003: Latching contact fault
+#1.00
+00:00:00	0000	I	<h1>Complete the following:</h1>{{n}}<ul>{{n}}<li>Close the MCC Circuit breaker</li>{{n}}<li>Turn the control switch to remote</li>{{n}}<li>Press the remote start button (click again to release)</li>{{n}}</ul>	tannoy.png
+00:00:10	0009	F	<p>The Auxilary Fan only works if I hold the start button in</p>{{n}}<p>I can't stand here all day with my finger on the button! Get it fixed NOW!</p>	roughneck.png

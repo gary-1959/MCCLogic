@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A31FA9F2-BB15-469E-92DE-870DEE03A82B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpCircuit</RootNamespace>
+    <AssemblyName>MCCLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\garyb\OneDrive\Desktop\Contrelec Website\website\2021\software2022\mcclogic\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://www.contrelec.co.uk/software2022/mcclogic/</UpdateUrl>
+    <SupportUrl>http://www.contrelec.co.uk/software/mcclogic/support</SupportUrl>
+    <ProductName>MCCLogic</ProductName>
+    <PublisherName>Contrelec Limited</PublisherName>
+    <SuiteName>Logic</SuiteName>
+    <WebPage>index.php</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B4B1DD503B57236995E397BA482A93E1AED90A64</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LogicSimulator_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ServiceStack, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.4.5.8\lib\net45\ServiceStack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Client, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Client.4.5.8\lib\net45\ServiceStack.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.5.8\lib\net45\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.5.8\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.5.8\lib\net45\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SKGL, Version=2.0.4.1, Culture=neutral, PublicKeyToken=6506df92444891d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SoftwareProtector.1.0.5.1\lib\SKGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="Circuits\SimCircuit.cs" />
+    <Page Include="Donate\DonateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Donate\Donate.cs" />
+    <Compile Include="Donate\DonateWindow.xaml.cs" />
+    <Compile Include="Faults\FaultItemControlDataGrid.xaml.cs">
+      <DependentUpon>FaultItemControlDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faults\ScriptMessageWindow.xaml.cs">
+      <DependentUpon>ScriptMessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faults\ScriptWriter.xaml.cs">
+      <DependentUpon>ScriptWriter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Licensing\Licensing.cs" />
+    <Compile Include="LinqToVisualTree.cs" />
+    <Compile Include="MCC\MCCContactor.xaml.cs">
+      <DependentUpon>MCCContactor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MCC\MCCCan.xaml.cs">
+      <DependentUpon>MCCCan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MCC\MCC.xaml.cs">
+      <DependentUpon>MCC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MCC\MCCTabControl.xaml.cs">
+      <DependentUpon>MCCTabControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faults\FaultItemControl.xaml.cs">
+      <DependentUpon>FaultItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faults\FaultWindow.xaml.cs">
+      <DependentUpon>FaultWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faults\Scripting.cs" />
+    <Compile Include="Faults\ScriptingControl.xaml.cs">
+      <DependentUpon>ScriptingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GetLinkerTime.cs" />
+    <Compile Include="AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MessageControl.xaml.cs">
+      <DependentUpon>MessageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pendant\MCCPendant.xaml.cs">
+      <DependentUpon>MCCPendant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShareConfiguration.cs" />
+    <Compile Include="SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MCC\MCCRelay.xaml.cs">
+      <DependentUpon>MCCRelay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CircuitPoint.xaml.cs">
+      <DependentUpon>CircuitPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\Extensions.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\CircuitElement.cs" />
+    <Compile Include="src\Circuit.cs" />
+    <Compile Include="src\Diode.cs" />
+    <Compile Include="src\elements\AMSource.cs" />
+    <Compile Include="src\elements\AnalogSwitch2.cs" />
+    <Compile Include="src\elements\AnalogSwitch.cs" />
+    <Compile Include="src\elements\CapacitorElm.cs" />
+    <Compile Include="src\elements\Chip.cs" />
+    <Compile Include="src\elements\chip\ADCElm.cs" />
+    <Compile Include="src\elements\chip\CC2Elm.cs" />
+    <Compile Include="src\elements\chip\CounterElm.cs" />
+    <Compile Include="src\elements\chip\DACElm.cs" />
+    <Compile Include="src\elements\chip\DecadeElm.cs" />
+    <Compile Include="src\elements\chip\DeMultiplexerElm.cs" />
+    <Compile Include="src\elements\chip\DFlipFlop.cs" />
+    <Compile Include="src\elements\chip\FullAdder.cs" />
+    <Compile Include="src\elements\chip\HalfAdder.cs" />
+    <Compile Include="src\elements\chip\JKFlipFlopElm.cs" />
+    <Compile Include="src\elements\chip\LatchElm.cs" />
+    <Compile Include="src\elements\chip\LEDMatrixElm.cs" />
+    <Compile Include="src\elements\chip\MultiplexerElm.cs" />
+    <Compile Include="src\elements\chip\PhaseCompElm.cs" />
+    <Compile Include="src\elements\chip\PisoShiftElm.cs" />
+    <Compile Include="src\elements\chip\SeqGenElm.cs" />
+    <Compile Include="src\elements\chip\SevenSegDecoderElm.cs" />
+    <Compile Include="src\elements\chip\SevenSegElm.cs" />
+    <Compile Include="src\elements\chip\SipoShiftElm.cs" />
+    <Compile Include="src\elements\chip\SRAMElm.cs" />
+    <Compile Include="src\elements\chip\TFlipFlopElm.cs" />
+    <Compile Include="src\elements\chip\TimerElm.cs" />
+    <Compile Include="src\elements\chip\VCOElm.cs" />
+    <Compile Include="src\elements\CurrentSource.cs" />
+    <Compile Include="src\elements\DiodeElm.cs" />
+    <Compile Include="src\elements\diode\LEDElm.cs" />
+    <Compile Include="src\elements\diode\ZenerElm.cs" />
+    <Compile Include="src\elements\FMSource.cs" />
+    <Compile Include="src\elements\LogicGate.cs" />
+    <Compile Include="src\elements\gate\AndGateElm.cs" />
+    <Compile Include="src\elements\gate\NandGateElm.cs" />
+    <Compile Include="src\elements\gate\NorGateElm.cs" />
+    <Compile Include="src\elements\gate\OrGateElm.cs" />
+    <Compile Include="src\elements\gate\XorGateElm.cs" />
+    <Compile Include="src\elements\Ground.cs" />
+    <Compile Include="src\elements\InductorElm.cs" />
+    <Compile Include="src\elements\Inverter.cs" />
+    <Compile Include="src\elements\InvertingSchmittTrigger.cs" />
+    <Compile Include="src\elements\Lamp.cs" />
+    <Compile Include="src\elements\LogicInput.cs" />
+    <Compile Include="src\elements\LogicOutput.cs" />
+    <Compile Include="src\elements\Memristor.cs" />
+    <Compile Include="src\elements\Mosfet.cs" />
+    <Compile Include="src\elements\mosfet\JfetElm.cs" />
+    <Compile Include="src\elements\mosfet\NMosfet.cs" />
+    <Compile Include="src\elements\mosfet\PMosfet.cs" />
+    <Compile Include="src\elements\OpAmp.cs" />
+    <Compile Include="src\elements\Output.cs" />
+    <Compile Include="src\elements\Potentiometer.cs" />
+    <Compile Include="src\elements\Probe.cs" />
+    <Compile Include="src\elements\SiliconRectifier.cs" />
+    <Compile Include="src\elements\SwitchSPDT.cs" />
+    <Compile Include="src\elements\voltage\rail\AntennaInput.cs" />
+    <Compile Include="src\elements\voltage\rail\ClockInput.cs" />
+    <Compile Include="src\elements\voltage\rail\VarRailElm.cs" />
+    <Compile Include="src\elements\Resistor.cs" />
+    <Compile Include="src\elements\SchmittTrigger.cs" />
+    <Compile Include="src\elements\SparkGap.cs" />
+    <Compile Include="src\elements\SwitchSPST.cs" />
+    <Compile Include="src\elements\TappedTransformer.cs" />
+    <Compile Include="src\elements\Transformer.cs" />
+    <Compile Include="src\elements\Transistor.cs" />
+    <Compile Include="src\elements\Triode.cs" />
+    <Compile Include="src\elements\TriStateBuffer.cs" />
+    <Compile Include="src\elements\TunnelDiode.cs" />
+    <Compile Include="src\elements\Voltage.cs" />
+    <Compile Include="src\elements\voltage\ACVoltageSource.cs" />
+    <Compile Include="src\elements\voltage\DCVoltageSource.cs" />
+    <Compile Include="src\elements\voltage\VoltageInput.cs" />
+    <Compile Include="src\elements\Wire.cs" />
+    <Compile Include="src\ICircuitElement.cs" />
+    <Compile Include="src\SIUnits.cs" />
+    <Compile Include="src\RowInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snowflake\DisposableAction.cs" />
+    <Compile Include="Snowflake\IdWorker.cs" />
+    <Compile Include="Snowflake\InvalidSystemClock.cs" />
+    <Compile Include="Snowflake\TimeExtensions.cs" />
+    <Compile Include="UIHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINCENSE.txt" />
+    <Content Include="Resources\MCCLogic Schematic.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\BLOWER-CONTACTOR-RESET-DOWN.png" />
+    <Resource Include="Resources\BLOWER-CONTACTOR-RESET-UP.png" />
+    <Resource Include="Resources\BLOWER-CONTACTOR-TRIP-DOWN.png" />
+    <Resource Include="Resources\BLOWER-CONTACTOR-TRIP-UP.png" />
+    <Content Include="Resources\banner\banner.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\banner\bg-1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CANCON-1.CSV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ICON.ico" />
+    <Resource Include="Resources\Icons\119-doc_bended.png" />
+    <Resource Include="Resources\Icons\008-doc_edit.png" />
+    <Resource Include="Resources\Icons\402-bottom.png" />
+    <Resource Include="Resources\Icons\402-down.png" />
+    <Resource Include="Resources\Icons\403-top.png" />
+    <Resource Include="Resources\Icons\403-up.png" />
+    <Resource Include="Resources\Icons\404-up_right.png" />
+    <Resource Include="Resources\Icons\407-down_right.png" />
+    <Resource Include="Resources\Icons\200-add.png" />
+    <Resource Include="Resources\Icons\506-hand.png" />
+    <Resource Include="Resources\scripticons\companyman.png" />
+    <Resource Include="Resources\scripticons\driller.png" />
+    <Resource Include="Resources\scripticons\electrician.png" />
+    <Resource Include="Resources\scripticons\flash.png" />
+    <Resource Include="Resources\scripticons\generator.png" />
+    <Resource Include="Resources\scripticons\klaxon.png" />
+    <Resource Include="Resources\scripticons\motorman.png" />
+    <Resource Include="Resources\scripticons\mudman.png" />
+    <Resource Include="Resources\scripticons\mudpump.png" />
+    <Resource Include="Resources\scripticons\roughneck.png" />
+    <Resource Include="Resources\scripticons\roustabout.png" />
+    <Resource Include="Resources\scripticons\tannoy.png" />
+    <Resource Include="Resources\scripticons\noimage.png" />
+    <Resource Include="Resources\Icons\085-help.png" />
+    <Resource Include="Resources\Icons\527-feather.png" />
+    <Resource Include="Resources\Icons\058-printer.png" />
+    <Resource Include="Resources\Icons\202-delete_1.png" />
+    <Resource Include="Resources\Icons\202-delete_2.png" />
+    <Resource Include="Resources\Icons\213-warning2.png" />
+    <Resource Include="Resources\Icons\214-thunderbolt.png" />
+    <AdditionalFiles Include="Resources\scripts\SCRIPT-001.SCR">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Resources\scripts\SCRIPT-002.SCR">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Resources\scripts\SCRIPT-003.SCR">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Resources\scripts\SCRIPT-004.SCR">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Resources\scripts\SCRIPT-005.SCR">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <Resource Include="Resources\Icons\003-folder.png" />
+    <Resource Include="Resources\Icons\001-doc.png" />
+    <Resource Include="Resources\Icons\012-options.png" />
+    <Resource Include="Resources\Icons\045-lock.png" />
+    <Resource Include="Resources\Icons\132-exit.png" />
+    <Resource Include="Resources\Icons\202-delete.png" />
+    <Resource Include="Resources\Icons\202C-delete.png" />
+    <Resource Include="Resources\Icons\203-info.png" />
+    <Resource Include="Resources\Icons\206-enable.png" />
+    <Resource Include="Resources\Icons\210-help.png" />
+    <Resource Include="Resources\Icons\211-check_all.png" />
+    <Resource Include="Resources\Icons\224-point_blue.png" />
+    <Resource Include="Resources\Icons\227-rect_red.png" />
+    <Resource Include="Resources\Icons\412-reusable.png" />
+    <Resource Include="Resources\Icons\504-spanner.png" />
+    <Resource Include="Resources\Icons\741-execute.png" />
+    <Resource Include="Resources\Icons\800-ruler.png" />
+    <Resource Include="Resources\Icons\contrelec-c.png" />
+    <Resource Include="Resources\MCC-BREAKER-CLOSED.png" />
+    <Resource Include="Resources\MCC-BREAKER-OPEN.png" />
+    <Resource Include="Resources\MCC-BREAKER-TRIPPED.png" />
+    <Resource Include="Resources\MCC-CAN.png" />
+    <Resource Include="Resources\MCC-CABINET.png" />
+    <Resource Include="Resources\MCC-CONTACTOR-CLOSED.png" />
+    <Resource Include="Resources\MCC-CONTACTOR-OPEN.png" />
+    <Content Include="Resources\MCC-CONTACTOR.png" />
+    <Resource Include="Resources\PB-GREEN-DOWN.png" />
+    <Resource Include="Resources\PB-GREEN-UP.png" />
+    <Resource Include="Resources\PB-RED-DOWN.png" />
+    <Resource Include="Resources\PB-RED-UP.png" />
+    <Content Include="Resources\banner\mcc-logic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\banner\mcclogic-banner.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\metal_door_close.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config" />
+    <None Include="LogicSimulator_1_TemporaryKey.pfx" />
+    <None Include="LogicSimulator_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <Content Include="ICON.ico" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resources\DSEG7Classic-BoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Faults\FaultItemControlDataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Faults\ScriptMessageWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Faults\ScriptWriter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MCC\MCCContactor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MCC\MCCCan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MCC\MCC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MCC\MCCTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AboutWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Faults\FaultItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Faults\FaultWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Faults\ScriptingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Messages\MessageControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pendant\MCCPendant.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SplashWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MCC\MCCRelay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircuitPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DVM-KNOB.png" />
+    <Resource Include="Resources\DVM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LAMP-GREEN-OFF.png" />
+    <Resource Include="Resources\LAMP-GREEN-ON.png" />
+    <Resource Include="Resources\LAMP-RED-OFF.png" />
+    <Resource Include="Resources\LAMP-RED-ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SWITCH-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\heavy_throw_switch.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\large_castle_metal_door_slammed_close.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\PB-BLACK-DOWN.png" />
+    <Resource Include="Resources\PB-BLACK-UP.png" />
+    <Resource Include="Resources\Pendant.png" />
+    <Resource Include="Resources\PENDANT-EM-STOP-DOWN.png" />
+    <Resource Include="Resources\PENDANT-EM-STOP-UP.png" />
+    <Resource Include="Resources\PENDANT-LAMP-OFF.png" />
+    <Resource Include="Resources\PENDANT-LAMP-ON.png" />
+    <Resource Include="Resources\PENDANT-PB-DOWN.png" />
+    <Resource Include="Resources\PENDANT-PB-UP.png" />
+    <Content Include="Resources\ping_switch.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\SPLASH.png" />
+    <Content Include="Resources\thunk_switch.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

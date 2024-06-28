@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LogicSimulator.exe" version="1.0.0.0" publicKeyToken="5ab66de75318a762" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LogicSimulator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="LogicSimulator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LogicSimulator.exe" size="17204664">
+      <assemblyIdentity name="LogicSimulator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3p2IE+Mhx668ZQp38O8MyzKYps9iaiaTk4+OknsWbf4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceStack.dll" size="1687040">
+      <assemblyIdentity name="ServiceStack" version="4.5.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NOe87ClrtAN/2pYu4cDZ2xnj72rhbpfy9okSmPODuBo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceStack.Client.dll" size="189952">
+      <assemblyIdentity name="ServiceStack.Client" version="4.5.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bkMvq7JC0u98YuEWY3oG+MMOrK1DYxRDb5J3WR7pmL0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceStack.Common.dll" size="184832">
+      <assemblyIdentity name="ServiceStack.Common" version="4.5.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gGWkF85SnKPQMmC3ioDgT0QcPzDWKTp83Bg+ec/aUQE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceStack.Interfaces.dll" size="131072">
+      <assemblyIdentity name="ServiceStack.Interfaces" version="4.0.0.0" publicKeyToken="E06FBC6124F57C43" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CsiCrdT2egBxK63V3gRO2sFhG3mfpvw1gIYHFA4wJE4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceStack.Text.dll" size="348160">
+      <assemblyIdentity name="ServiceStack.Text" version="4.5.6.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o+nLEws8cJRuolnK5fM7veItUCb4FnHNUaJ6KLbl44Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="LogicSimulator.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GUHS+OFx1101tsQAmSxc2HiZ6DFfxLEUn0Es0Znho/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\heavy_throw_switch.mp3" size="18807">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HAEEc3nLxbGF1y1ndOUBP4qCSWfv+ElACVpJvF8SLf4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\large_castle_metal_door_slammed_close.mp3" size="94336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GULT9yc3M0hKmfO8K7XnKFivjvwDC4ALHOGaqElXQgU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\ping_switch.mp3" size="24031">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Au2CwdK7FcZumjKACDFWFpAKXxy/2DE0Ton7ni9IB8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-DW-FRONT.png" size="22880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7lkMZbZ+P/xAaDh8Lo65SkMW+M13hQxPdQk8SJfNdgs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-DW-REAR.png" size="24977">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dxpsypP9nDRW2cMOHzKFJXXY8Rwi9l3zcs5zB99M8kE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-MP1-FRONT.png" size="22996">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k1/zAqM6SJmyBNkgTv/RYfi/iBOYGWfgUs/YXFDO4AY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-MP1-REAR.png" size="16463">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CDI4KWDrBKLpLCW8Zcf0ZMkBs5SAlfyqomkCvKFy0z0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-MP2-FRONT.png" size="23375">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cSmDtOglsiP/Wfz0lVWaSX6ttIwAbcGDRaJxOWJWhDQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-MP2-REAR.png" size="19048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GbT0QnIUdCu4/l1LBmfh/h6jBJlnci4Kn4c5SVtAOmU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-RT-FRONT.png" size="22230">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pw+4E+uo9/ufHIuoU8Yv/ej0Mws9gjwLPjyIaEYSwPw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\POT-WIRES-RT-REAR.png" size="19469">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GPfozFbspq0nVfhw5TBI9C0azgrRRsZ/cWrDbFGfY/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\power_plant_ambience_with_constant_light_roar.mp3" size="6209664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mWgndwg0y9qQ6HvkLGBH2rHxjEoM3xQSMDliwkPWv4c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\thunk_switch.mp3" size="15672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g7Ezmx86Ig1pYJrmlVgcI1S9zOpKBiCDYF8VxMJsorc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=WS14XXTMP\Gary" issuerKeyHash="5630dc64c97b1e49c12a482213cdb9a7308f3cfe" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VG+/3GC7LCZL35ykSvsqwXUVBbQWhYjIuuU5vtR4+Tg=</DigestValue></Reference></SignedInfo><SignatureValue>DHJRhYvKKdXQAgVTeWptQXBqtYEXc5f8prQ2pVuyrojZjcTMpoO3oBYG9G/DvmKRLgwzAXUSIYQ8GBhwyMbv2lFHvKqdJq1a6WQFMtn6wwJDFpJgm0lrUwnYcaRThsuVsBLuy3GCDJaw5WOk6P829OBrzd1jo6/EY/ttr0lD6uk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>j124YCJ+X2Vsu5/nzFowXByXlX0OoGxYTUYZ7K6n/hBRT3Ww2/4j6httfkaBrRBbyBCI0kjxxuz0kxyqaIlvEcs4aTqPsxF+dr1IiStB3jN0qosds6buhdpDReOwkQZWBpJpdYYHoYJqqOgqmu/yXoX3XvPAGyyfmRCYU1AAFCc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="38f978d4be39e5bac8888516b4051575c12afb4aa49cdf4b262cbb60dcbf6f54" Description="" Url=""><as:assemblyIdentity name="LogicSimulator.exe" version="1.0.0.0" publicKeyToken="5ab66de75318a762" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WS14XXTMP\Gary</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TiDxbjpEjp4jOn7F0r0Lef8vVNzm+jSIaDLMBSIu7ZQ=</DigestValue></Reference></SignedInfo><SignatureValue>MwKbEhsuXSF/ZgUNsvEz1HMxCpUdAouohA5Ekp+GZizegvFV4JSK+dJciFlCGfXzusMQnBI1CJN9M021KxlMXYBS5cktlNMjVcMcjBb+jbidvw/p45subxNenmjVJEKyVpu8qBmEx8mmPUVgzwgWSqH7z1oEJoFqCfRpYcR5aX8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>j124YCJ+X2Vsu5/nzFowXByXlX0OoGxYTUYZ7K6n/hBRT3Ww2/4j6httfkaBrRBbyBCI0kjxxuz0kxyqaIlvEcs4aTqPsxF+dr1IiStB3jN0qosds6buhdpDReOwkQZWBpJpdYYHoYJqqOgqmu/yXoX3XvPAGyyfmRCYU1AAFCc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQP1Uv04fAebhOvpqAiw4PADANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAVwBTADEANABYAFgAVABNAFAAXABHAGEAcgB5MB4XDTE3MDQwMzEwMjgxNloXDTE4MDQwMzE2MjgxNlowJzElMCMGA1UEAx4cAFcAUwAxADQAWABYAFQATQBQAFwARwBhAHIAeTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAj124YCJ+X2Vsu5/nzFowXByXlX0OoGxYTUYZ7K6n/hBRT3Ww2/4j6httfkaBrRBbyBCI0kjxxuz0kxyqaIlvEcs4aTqPsxF+dr1IiStB3jN0qosds6buhdpDReOwkQZWBpJpdYYHoYJqqOgqmu/yXoX3XvPAGyyfmRCYU1AAFCcCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAigueG2cVOFUpRgOr/O7Cfm+udQRD3cOU3cjlwYr5Jfd+oAKv/Oy5hx1dlLEpJUDKCZVu1BGnblhW5Z2mYVz3FZHmccfBjKjUIAOwqXS0SSrQmUHuHDAoVLapX+41wUyzcj4ftOHIUI0dydf082KghqCztbOQtB8xlntPQuiJdWQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

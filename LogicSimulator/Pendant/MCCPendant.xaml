@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="SharpCircuit.MCCPendant"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="992" d:DesignWidth="255
+             ">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/MCCLogic;component/Resources/Pendant.png"/>
+    </UserControl.Background>
+    <Grid x:Name ="MainContainer" Margin="0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="59*"/>
+                <ColumnDefinition Width="144*"/>
+                <ColumnDefinition Width="55*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="469*"/>
+                <RowDefinition Height="144*"/>
+                <RowDefinition Height="39*"/>
+                <RowDefinition Height="104*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="103*"/>
+                <RowDefinition Height="98*"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="EMSTOP" Grid.Row="1" Grid.Column="1" Source="/MCCLogic;component/Resources/PENDANT-EM-STOP-UP.png" />
+            <Image x:Name="LAMP" Grid.Row="3" Grid.Column="1" Source="/MCCLogic;component/Resources/PENDANT-LAMP-OFF.png" />
+            <Image x:Name="START" Grid.Row="5" Grid.Column="1" Source="/MCCLogic;component/Resources/PENDANT-PB-UP.png" />
+
+        </Grid>
+
+        <Rectangle x:Name="HiLite" Visibility="Hidden" IsHitTestVisible="False" Width="20" Height="20" Fill="#FFE4D97C" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5" />
+
+    </Grid>
+
+</UserControl>

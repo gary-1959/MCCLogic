@@ -1,0 +1,60 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             xmlns:SharpCircuit="clr-namespace:SharpCircuit" x:Class="SharpCircuit.MCCTabControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="3000" d:DesignWidth="3000">
+    <UserControl.Resources>
+        <RadialGradientBrush x:Key="BackgroundBrush">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </UserControl.Resources>
+    <Grid>
+
+        <TabControl x:Name="tabControl" Margin="0" TabStripPlacement="Bottom">
+            <!-- MCC -->
+            <TabItem Header="MCC">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderClosed" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerClosed" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridClosed" Width="1312" Height="938" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformClosed"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MCC x:Name="MCCControl" Margin="0" x:FieldModifier="public"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Remote">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left" Minimum="0.25" x:Name="sliderRemote" Margin="4"/>
+                    <ScrollViewer Name="scrollViewerRemote" Grid.Column="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Background="{DynamicResource BackgroundBrush}">
+                        <Grid Name="gridRemote" Width="255" Height="992" RenderTransformOrigin="0.5,0.5">
+                            <Grid.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform x:Name="scaleTransformRemote"/>
+                                </TransformGroup>
+                            </Grid.LayoutTransform>
+                            <local:MCCPendant x:Name="MCCPendant" Margin="0" x:FieldModifier="public"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

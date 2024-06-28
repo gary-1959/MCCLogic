@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="SharpCircuit.CircuitPoint"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" BorderThickness="0" Width="Auto" Height="Auto" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave" Background="#00FF0000" MouseRightButtonDown="UserControl_MouseRightButtonDown" MouseRightButtonUp="UserControl_MouseRightButtonUp"/>
+
+
+
+

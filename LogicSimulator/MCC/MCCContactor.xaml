@@ -1,0 +1,245 @@
+﻿<UserControl x:Class="SharpCircuit.MCCContactor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SharpCircuit"
+             mc:Ignorable="d" 
+             d:DesignHeight="291" d:DesignWidth="198">
+    <Grid>
+        <Image Margin="0" Source="/MCCLogic;component/Resources/MCC-CONTACTOR.png"/>
+
+        <Grid Margin="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="19*" />
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="57*"/>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="21*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!-- TOP ROW -->
+            <Grid Margin="0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpC1_A" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                <local:CircuitPoint x:Name="cpC1_1" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                <local:CircuitPoint x:Name="cpC1_3" Margin="0" Grid.Row="0" Grid.Column="5"/>
+                <local:CircuitPoint x:Name="cpC1_5" Margin="0" Grid.Row="0" Grid.Column="7"/>
+                <local:CircuitPoint x:Name="cpC1_COM" Margin="0" Grid.Row="0" Grid.Column="9"/>
+                <local:CircuitPoint x:Name="cpC1_15" Margin="0" Grid.Row="0" Grid.Column="11"/>
+                <local:CircuitPoint x:Name="cpC1_17" Margin="0" Grid.Row="0" Grid.Column="13"/>
+            </Grid>
+
+            <!-- SECOND ROW -->
+            <Grid Margin="0" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpC1_11" Margin="0" Grid.Row="0" Grid.Column="11"/>
+                <local:CircuitPoint x:Name="cpC1_13" Margin="0" Grid.Row="0" Grid.Column="13"/>
+            </Grid>
+
+            <!-- THIRD ROW -->
+            <Grid Margin="0" Grid.Row="5 ">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpC1_NO" Margin="0" Grid.Row="0" Grid.Column="9"/>
+                <local:CircuitPoint x:Name="cpC1_12" Margin="0" Grid.Row="0" Grid.Column="11"/>
+                <local:CircuitPoint x:Name="cpC1_14" Margin="0" Grid.Row="0" Grid.Column="13"/>
+            </Grid>
+
+            <!-- FOURTH ROW -->
+            <Grid Margin="0" Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpC1_B" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                <local:CircuitPoint x:Name="cpC1_2" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                <local:CircuitPoint x:Name="cpC1_4" Margin="0" Grid.Row="0" Grid.Column="5"/>
+                <local:CircuitPoint x:Name="cpC1_6" Margin="0" Grid.Row="0" Grid.Column="7"/>
+                <local:CircuitPoint x:Name="cpC1_NC" Margin="0" Grid.Row="0" Grid.Column="9"/>
+                <local:CircuitPoint x:Name="cpC1_16" Margin="0" Grid.Row="0" Grid.Column="11"/>
+                <local:CircuitPoint x:Name="cpC1_18" Margin="0" Grid.Row="0" Grid.Column="13"/>
+            </Grid>
+
+            <!-- FIFTH ROW -->
+            <Grid Margin="0" Grid.Row="13">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="33*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="58*"/>
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpOL1_NO1" Margin="0" Grid.Row="0" Grid.Column="1"/>
+                <local:CircuitPoint x:Name="cpOL1_NO2" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                <local:CircuitPoint x:Name="cpOL1_NC1" Margin="0" Grid.Row="0" Grid.Column="5"/>
+                <local:CircuitPoint x:Name="cpOL1_NC2" Margin="0" Grid.Row="0" Grid.Column="7"/>
+            </Grid>
+
+            <!-- SIXTH ROW -->
+            <Grid Margin="0" Grid.Row="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="21"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+
+                </Grid.ColumnDefinitions>
+                <local:CircuitPoint x:Name="cpOL1_2" Margin="0" Grid.Row="0" Grid.Column="3"/>
+                <local:CircuitPoint x:Name="cpOL1_4" Margin="0" Grid.Row="0" Grid.Column="5"/>
+                <local:CircuitPoint x:Name="cpOL1_6" Margin="0" Grid.Row="0" Grid.Column="7"/>
+            </Grid>
+
+            <!-- INDICATOR -->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="68*"/>
+                    <ColumnDefinition Width="36*"/>
+                    <ColumnDefinition Width="94*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="16*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="15*" />
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Indicator" Grid.Row="1" Margin="0" Source="/MCCLogic;component/Resources/MCC-CONTACTOR-OPEN.png" />
+                </Grid>
+            </Grid>
+
+
+            <!-- BUTTONS -->
+            <Grid Margin="0" Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="34*"/>
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="125*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Trip" Grid.Column="1" Margin="0" Source="/MCCLogic;component/Resources/BLOWER-CONTACTOR-TRIP-DOWN.png" />
+                <Image x:Name="Reset" Grid.Column="3" Margin="0" Source="/MCCLogic;component/Resources/BLOWER-CONTACTOR-RESET-UP.png" Cursor="Hand"/>
+            </Grid>
+            <!-- ROW 5 -->
+            <Grid Margin="0" Grid.Row="13">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="17*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <!-- BOTTOM ROW -->
+            <Grid Margin="0" Grid.Row="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</UserControl>
